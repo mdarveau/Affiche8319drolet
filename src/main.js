@@ -25,7 +25,7 @@ function initLightboxGallery() {
   // Create thumbnail grid
   images.forEach((image, index) => {
     const img = document.createElement("img");
-    img.src = `public/photos/${image}`;
+    img.src = `./photos/${image}`;
     img.alt = `Appartement photo ${index + 1}`;
     img.className =
       "w-full h-48 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity";
@@ -44,7 +44,7 @@ function initLightboxGallery() {
 
   function openLightbox(index) {
     currentImageIndex = index;
-    modalImg.src = `public/photos/${images[index]}`;
+    modalImg.src = `./photos/${images[index]}`;
     modalImg.alt = `Appartement photo ${index + 1}`;
     modal.classList.remove("hidden");
     modal.classList.add("flex");
@@ -59,13 +59,13 @@ function initLightboxGallery() {
 
   function showPrevImage() {
     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    modalImg.src = `public/photos/${images[currentImageIndex]}`;
+    modalImg.src = `./photos/${images[currentImageIndex]}`;
     modalImg.alt = `Appartement photo ${currentImageIndex + 1}`;
   }
 
   function showNextImage() {
     currentImageIndex = (currentImageIndex + 1) % images.length;
-    modalImg.src = `public/photos/${images[currentImageIndex]}`;
+    modalImg.src = `./photos/${images[currentImageIndex]}`;
     modalImg.alt = `Appartement photo ${currentImageIndex + 1}`;
   }
 
