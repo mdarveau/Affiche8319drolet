@@ -1,14 +1,15 @@
 // Image data - list of all photos
 const images = [
-  "IMG_3893.jpeg",
-  "IMG_3894 2.jpeg",
-  "IMG_3895 2.jpeg",
-  "IMG_3896 2.jpeg",
-  "IMG_3897 2.jpeg",
+  "IMG_3932.jpeg",
+  "IMG_3929.jpeg",
+  "IMG_3930.jpeg",
   "IMG_3900.jpeg",
   "IMG_3901.jpeg",
   "IMG_3903.jpeg",
-  "IMG_3904.jpeg",
+  "IMG_3926.jpeg",
+  "IMG_3927.jpeg",
+  "IMG_3928.jpeg",
+  "IMG_3893.jpeg",
 ];
 
 let currentImageIndex = 0;

@@ -4,6 +4,20 @@
 
 @layer components {
   /* Lightbox gallery styles */
+  #lightbox-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* Better handling for vertical images */
+  @media (max-width: 768px) {
+    #lightbox-image {
+      max-width: 95vw;
+      max-height: 85vh;
+    }
+  }
 }
 
 /* Smooth scrolling for scrollable gallery */
